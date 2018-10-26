@@ -9,6 +9,52 @@
   "dependencies": {
     "express": "^4.13.3"
   },
+  "body-parser": {
+    "version": "1.18.3",
+    "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.18.3.tgz",
+    "integrity": "sha1-WykhmP/dVTs6DyDe0FkrlWlVyLQ=",
+    "requires": {
+      "bytes": "3.0.0",
+      "content-type": "1.0.4",
+      "debug": "2.6.9",
+      "depd": "1.1.2",
+      "http-errors": "1.6.3",
+      "iconv-lite": "0.4.23",
+      "on-finished": "2.3.0",
+      "qs": "6.5.2",
+      "raw-body": "2.3.3",
+      "type-is": "1.6.16"
+    }
+  },
+  "mysql": {
+    "version": "2.16.0",
+    "resolved": "https://registry.npmjs.org/mysql/-/mysql-2.16.0.tgz",
+    "integrity": "sha512-dPbN2LHonQp7D5ja5DJXNbCLe/HRdu+f3v61aguzNRQIrmZLOeRoymBYyeThrR6ug+FqzDL95Gc9maqZUJS+Gw==",
+    "requires": {
+      "bignumber.js": "4.1.0",
+      "readable-stream": "2.3.6",
+      "safe-buffer": "5.1.2",
+      "sqlstring": "2.3.1"
+    },
+    "dependencies": {
+      "safe-buffer": {
+        "version": "5.1.2",
+        "resolved": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz",
+        "integrity": "sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g=="
+      }
+    }
+  },
+  "promise-mysql": {
+    "version": "3.3.1",
+    "resolved": "https://registry.npmjs.org/promise-mysql/-/promise-mysql-3.3.1.tgz",
+    "integrity": "sha512-PE+J6TtAqMJpdREvSphKvd+pn0IgGiLgxaDBb12oZNBR1VSxYSzknveuiSBmkptZC1ZDRwU+zBxBJeBgGFkCRA==",
+    "requires": {
+      "@types/bluebird": "3.5.24",
+      "@types/mysql": "2.15.5",
+      "bluebird": "3.5.2",
+      "mysql": "2.16.0"
+    }
+  },
   "engines": {
     "node": "4.0.0"
   },
