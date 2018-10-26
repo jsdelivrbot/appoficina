@@ -1,5 +1,5 @@
 var router = require('express').Router();
-var db = require('../../controllers/dbConnections');
+var db = require('../controllers/dbConnections');
 var bodyParser = require('body-parser');
 
 var querySql = db.querySql;
