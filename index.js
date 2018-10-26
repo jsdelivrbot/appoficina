@@ -19,7 +19,7 @@ app.get('/batata', function(req, res) {
   res.send('batata')
 });
 
-// router.use('/carclient', require('./router/carfind'));
+router.use('/carclient', require('./router/carfind'));
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
