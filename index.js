@@ -11,7 +11,6 @@ app.use(function(req, res, next) {
   next();
 });
 
-router.use('/carfind', require('./router/carfind'));
 
 app.get('/', function(req, res) {
   response.send('Hello World!')
