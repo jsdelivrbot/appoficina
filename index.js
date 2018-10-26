@@ -11,7 +11,6 @@ app.use(function(req, res, next) {
   next();
 });
 
-
 app.get('/', function(req, res) {
   response.send('Hello World!')
 })
@@ -23,5 +22,8 @@ app.listen(app.get('port'), function() {
 app.get('/batata', function(req, res) {
   res.send('batata')
 });
+
+
+router.use('/carclient', require('./router/carfind'));
 
 module.exports = router;
