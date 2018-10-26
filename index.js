@@ -11,9 +11,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-router.use('/carFind', require('./router/carFind'));
+router.use('/carfind', require('./router/carfind'));
 
-app.get('/', function(request, response) {
+app.get('/', function(req, res) {
   response.send('Hello World!')
 })
 
@@ -21,3 +21,8 @@ app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 })
 
+app.get('/batata', function(req, res) {
+  res.send('batata')
+});
+
+module.exports = router;
