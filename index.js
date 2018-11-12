@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', function(req, res) {
-  response.send('Hello World!')
+  res.send('Hello World!')
 });
 
 app.get('/batata', function(req, res) {
